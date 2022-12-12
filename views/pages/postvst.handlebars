@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/styles/postvst.css">
+
+<div class="screen-post">
+
+    <form action="/painel" method="GET"><button class="btn-post-painel">painel de posts</button></form>
+
+    <h2>postar um novo pluguin vst</h2>
+    <form action="/registration" method="POST">
+        <input type="text" name="vstname" placeholder="nome do vst" required>
+        <br>
+        <textarea name="vstdescribe" id="" cols="30" rows="10" placeholder="descrição sobre" required></textarea>
+        <br>
+        <input type="text" name="vsturlimg" id="" placeholder="link da imagem" required>
+        <br>
+        <input type="text" name="vstlink" placeholder="link do torrent" required>
+        <br><br>
+        <span>categoria</span>
+        <select name="categorievst" class="categorievst" required>
+            <option ></option>
+            <option value="DAWS">DAWS</option>
+            <option value="Pianos">Pianos</option>
+            <option value="Drums-kit">Drums-kit</option>
+            <option value="Orchestra">Orchestra</option>
+            <option value="Kontakt">Kontakt</option>
+            <option value="Guitar-Fx">Guitar-Fx</option>
+            <option value="Pluguins">Pluguins</option>
+            <option value="Acoustic-Guitar">Acoustic-Guitar</option>
+            <option value="Bass">Bass</option>
+            <option value="World-Music">World-Music</option>
+            <option value="Percussion">Percussion</option>
+            <option value="SYNTH">SYNTH</option>
+        </select>
+        <span>sistema operacional</span>
+        <select name="osSystem" class="osSystem" required>
+            <option></option>
+            <option value="windows">windows</option>
+            <option value="mac">mac</option>
+            <option value="linux">linux</option>
+        </select>
+        <hr style="width: 400px;">
+
+        <button>postar</button>
+    </form>
+
+    <br><br>
+
+    <form action="/logout" method="POST"><button>encerrar sessão</button></form>
+
+</div>

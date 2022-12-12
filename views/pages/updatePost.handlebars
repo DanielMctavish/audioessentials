@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="/styles/updatePage.css">
+
+<div id="update-page">
+    <h2>{{current_post.name}} </h2>
+    <form action="/update" method="POST">
+        <input type="text" class="name-update" name="name" value={{current_post.name}} required>
+        <textarea name="descriupdate" placeholder="descrição" required>
+            {{current_post.descri}}
+        </textarea>
+        img:
+        <input type="text" name="imgupdate" placeholder="link-imagem" value={{current_post.img}} required>
+        link-download:
+        <input type="text" name="linkupdate" placeholder="link-download" value={{current_post.link}} required>
+        <select name="categoriesupdate" id="categories-update" required>
+            <option value={{current_post.categories}}>{{current_post.categories}}</option>
+            <option value="DAWS">DAWS</option>
+            <option value="Pianos">Pianos</option>
+            <option value="Drums-kit">Drums-kit</option>
+            <option value="Orchestra">Orchestra</option>
+            <option value="Kontakt">Kontakt</option>
+            <option value="Guitar-Fx">Guitar-Fx</option>
+            <option value="Pluguins">Pluguins</option>
+            <option value="Acoustic-Guitar">Acoustic-Guitar</option>
+            <option value="Bass">Bass</option>
+            <option value="World-Music">World-Music</option>
+            <option value="Percussion">Percussion</option>
+            <option value="SYNTH">SYNTH</option>
+        </select>
+        <span>sistema operacional</span>
+        <select name="osSystem" class="osSystem" required>
+            <option value={{current_post.osSystem}}>{{current_post.osSystem}}</option>
+            <option value="windows">windows</option>
+            <option value="mac">mac</option>
+            <option value="linux">linux</option>
+        </select>
+        <hr style="width: 400px;">
+
+        <button>atualizar</button>
+    </form>
+</div>

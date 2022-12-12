@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="/styles/painelpost.css">
+
+<div class="painel-posts">
+    <h2>VST's Postados</h2>
+    <form action="/" method="GET"><button>voltar</button></form>
+    {{#each postlist}}
+    <div>postado em:{{dateSet}}</div>
+    <div class="item-vst-post">
+        <img src={{img}} alt="">
+        <div id="center-painel">
+            <h2>{{name}}</h2>
+            <p>{{descri}}</p>
+        </div>
+
+        <div id="painel-right">
+            <div id="categories">categorias: {{categories}}</div>
+            <div>sistema operacional: {{osSystem}}</div>
+            <div id="link">
+                link download: {{link}}
+            </div>
+        </div>
+
+    </div>
+    <div id="btns-api-items">
+        <form action="/delete/{{_id}}" method="GET"><button>excluir</button></form>
+        <form action="/update/{{_id}}" method="GET"><button>editar</button></form>
+    </div>
+    {{/each}}
+</div>

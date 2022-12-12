@@ -1,0 +1,34 @@
+
+.screen-post{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    left: 0;
+    top: 0;
+
+    background: rgb(165, 165, 165);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-family: sans-serif;
+    color: rgb(44, 44, 44);
+}
+
+.screen-post form{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-post-painel{
+    position: absolute;
+    top: 2vh;
+    background: white;
+    color: rgb(41, 41, 41);
+    width: 100px;
+    min-height: 25px;
+    border: none;
+    cursor: pointer;
+}
