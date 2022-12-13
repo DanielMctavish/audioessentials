@@ -211,7 +211,7 @@ mongoose.connect("mongodb+srv://daniel:RyjCAgsMfT7huCde@cluster-vsts.ev25mse.mon
 
 
 
-const port = 5120;
+const port = process.env.PORT || 5120;
 app.listen(port, () => {
     console.log("conectado ao servidor com sucesso PORTA: ", port);
 })
