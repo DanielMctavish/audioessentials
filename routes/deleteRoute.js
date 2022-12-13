@@ -1,5 +1,4 @@
 const deleteRoute = require("express").Router();
-const PostsList = require("../data/PostVst")
 const itemsmodel = require("../models/itemsmodel")
 
 deleteRoute.use((req, res, next) => {
